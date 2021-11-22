@@ -31,11 +31,6 @@ body a:hover
     color: #0697AE;
 }
 
-input, textarea, select 
-{
-    -webkit-appearance: none;
-}
-
 ::-moz-selection 
 { 
     background-color: #aabdbd; 
@@ -502,6 +497,9 @@ body.open .site-content
     max-width: 470px;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
+    background: none;
+    border: none;
 }
 
 .more-posts
@@ -530,10 +528,20 @@ body.open .site-content
 {
     position: fixed;
     height: 100%;
-    width: 50%;
     width: calc(50% - 50px);
     background-size: cover;
     background-position: center center;
+    top: 0;
+}
+
+.featured-post-image div {
+    height: 100%;
+}
+
+.featured-post-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .cat-links
